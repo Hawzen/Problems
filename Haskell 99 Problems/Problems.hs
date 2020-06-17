@@ -5,6 +5,7 @@ import Data.List
 import Data.Char
 import Debug.Trace
 import System.Random
+import Text.Printf
 import qualified Data.Map as Map
 import qualified Data.Set as Set
 
@@ -185,11 +186,30 @@ prob22 :: Int -> Int -> [Int]
 prob22 i j = [i..j]
 
 
--- -- Problem 23
--- prob23 :: [a] -> Int -> IO [a]
--- prob23 xs i = do
---                 gen <- getStdGen
---                 take i $ randomR (1, length xs) (gen, 1) :: [Int]
+-- Problem 23
+prob23 :: (Integral i) => [a] -> i -> IO [a]
+prob23 xs i = do
+                gen <- getStdGen
+                let indices = genericTake i $ randomRs (0, length xs - 1) gen
+                return $ map (\ind -> xs !! ind) indices
+
+
+-- Problem 24
+prob24 :: (Num a, Enum a, Integral i) => i -> a -> IO [a]
+prob24 i n = prob23 [1..n] i
+
+
+-- Problem 25
+prob25 :: [a] -> IO [a]
+prob25 xs = do
+                gen <- getStdGen
+                let bools = take (length xs) $ randoms gen :: [Bool]
+                    appender  (x, b) (fals, tru) = 
+                                                    if b
+                                                    then (fals, x:tru) 
+                                                    else (x:fals, tru)
+                    cat (fals, tru) = fals ++ tru
+                return $ cat $ foldr appender ([], []) $ zip xs bools
 
 
 -- Problem 26
@@ -203,6 +223,12 @@ prob26 level xs = let subComb i = prob26 (level-1) $ snd $ splitAt i xs
 -- Problem 27
 -- prob27 :: [[a]] -> [[a]]
 -- prob27 xs =  let dict = 
+
+
+
+
+
+
 
 
 
