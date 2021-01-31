@@ -252,7 +252,6 @@ prob28' xss = let lookIncrement x acc =
 
 
 -- Problem 50
-
 data Tree a = Leaf a | Node a (Tree a) (Tree a)
               deriving (Show, Read, Eq)
 
