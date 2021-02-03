@@ -16,4 +16,5 @@ LeetCode:
   LC7: Zigzag Conversion [Medium]
   LC8: Reverse Integer [Easy]
   LC9: String To Integer Atoi [Medium]
+  LC10: Palindrome Number [Easy]
 </pre>
