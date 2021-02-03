@@ -14,4 +14,6 @@ LeetCode:
   LC5: Longest Palindromic Substring [Medium]
   LC6: Median Of Two Sorted Arrays [Hard]
   LC7: Zigzag Conversion [Medium]
+  LC8: Reverse Integer [Easy]
+  LC9: String To Integer Atoi [Medium]
 </pre>
