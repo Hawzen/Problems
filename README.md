@@ -8,7 +8,10 @@ Haskell 99:
 
 LeetCode: 
   LC1: 2Sum [Easy] 
-  LC2: 4Sum [Normal] 
-  LC3: Add Two Numbers [Normal] 
-  LC4: Longest Substring Without Repeating Characters [Normal] 
+  LC2: 4Sum [Medium] 
+  LC3: Add Two Numbers [Medium] 
+  LC4: Longest Substring Without Repeating Characters [Medium] 
+  LC5: Longest Palindromic Substring [Medium]
+  LC6: Median Of Two Sorted Arrays [Hard]
+  LC7: Zigzag Conversion [Medium]
 </pre>
