@@ -13,4 +13,3 @@ def convert(self, s: str, numRows: int) -> str:
             if letter not in (0, numRows-1):
                 res.append(s[(block_num+1) * block_size - letter])
     return "".join(res).replace(" ", "")
-            
