@@ -21,4 +21,11 @@ LeetCode:
   LC13: Roman To Integer [Easy]
   LC14: Longest Common Prefix [Easy]
   LC18: 4Sum [Medium]
+  LC19: Remove Nth Node From End Of List [Medium]
+  LC20: Valid Parentheses [Easy]
+  LC21: Merge Two Sorted Lists [Easy]
+  LC22: Generate Parentheses [Medium]
+  LC23: Merge k Sorted Lists [Hard]
+  LC24: Swap Nodes in Pairs [Medium]
+  LC26: Remove Duplicates from Sorted Array [Easy]
 </pre>
